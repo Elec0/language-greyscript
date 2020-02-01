@@ -1,0 +1,28 @@
+{
+  "author": {
+    "name": "Elec0",
+    "email": "elec08215@gmail.com"
+  },
+  "description": "Grey Hack Grey Script Syntax Highlighting",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://atom.io/packages/language-greyscript",
+  "keywords": [
+    "Atom",
+    "package",
+    "language",
+    "greyscript",
+    "grey hack",
+    "miniscript",
+    "syntax",
+    "highlight"
+  ],
+  "license": "ISC",
+  "name": "language-greyscript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elec0/language-greyscript.git"
+  },
+  "version": "0.0.0"
+}

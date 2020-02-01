@@ -1,0 +1,65 @@
+name: 'Grey Script'
+scopeName: 'greyscript'
+fileTypes: ['src', 'ms']
+
+patterns: [
+  { # Control
+    'match': '(?<!\\.)\\b(function|break|catch|continue|do|else|finally|for|if|not|and|or|end|then|import|package|return|throw|try|while|with|in)\\b'
+    'name': 'keyword.control.gs'
+  }
+  { # Classes
+    'match': '(\\b(Computer|Router|File|Port|Shell|Crypto|Metaxploit|NetSession)\\b)'
+    'name': 'support.class.gs'
+  }
+  { # Generic functions
+    'match':'\\b(\\.)?(typeof|get_router|nslookup|print|active_user|home_dir|get_shell|user_input|include_lib|exit|user_mail_address|user_bank_number|whois|command_info|program_path|format_columns|current_date|is_lan_ip)(?!\\s*:)\\b'
+    'name': 'support.function.gs'
+  }
+  { # Computer functions
+    'match': '(\\b(\\.)?(get_ports|File|create_folder|current_path|is_network_active|lan_ip|touch|show_procs|network|devices|change_password|create_user|delete_user|create_group|delete_group|groups|close_program|wifi_networks|connect_wifi)\\b)'
+    'name': 'support.function.gs'
+  }
+  { # Router functions
+    'match': '(\\b(\\.)?(public_ip|local_ip|ping_port|port_info|used_ports|computer_ports|computers_lan_ip|essid_name|bssid_name)\\b)'
+    'name': 'support.function.gs'
+  }
+  { # File functions
+    'match': '(\\b(\\.)?(copy|move|rename|path|parent|name|content|set_content|is_binary|has_permission|delete|get_folders|get_files|chmod|permissions|owner|group|set_group|size)\\b)'
+    'name': 'support.function.gs'
+  }
+  { # Misc functions
+    'match': '(\\b(\\.)?(get_lan_ip|is_closed|port_number|connect_service|start_terminal|scp_upload|put|build|launch|host_computer|decipher|aircrack|airmon|smtp_user_list|load|net_use|scan|scan_address|overflow|lib_name|version|dump_lib)\\b)'
+    'name': 'support.function.gs'
+  }
+  { # Coments
+    'match': '(//.*$)'
+    'name': 'comment.line.double-slash.gs'
+  }
+  { # Operators
+    'match': ':|;|=|\\+|-|\\*|/|\\^|\\?|!|\\[|\\]|&|<|>|<>|\\\\'
+    'name': 'keyword.operator.gs'
+  }
+  { # Strings
+    'match': '(")([^"]*(")|.*\\n|.*$)'
+    'captures':
+      '1':
+        'name': 'punctuation.definition.string.begin.gs'
+      '2':
+        'name': 'string.quoted.double.gs'
+      '3':
+        'name': 'punctuation.definition.string.begin.gs'
+    'name': 'meta.string.quoted.double.gs'
+  }
+  { # Numeric constants
+    'match': '(\\b(([0-9]+(\\.)?[0-9]*)|(\\.[0-9]+))\\b)'
+    'name': 'constant.numeric.gs'
+  }
+  { # Other constants
+    'match': '(\\b(true|false))'
+    'name': 'constant.language.gs'
+  }
+  {
+    'match': '(\\{|\\}|\\(|\\)|\\[|\\])'
+    'name': 'keyword.other.gs'
+  }
+]
