@@ -3,7 +3,7 @@
     "name": "Elec0",
     "email": "elec08215@gmail.com"
   },
-  "description": "Grey Hack Grey Script Syntax Highlighting",
+  "description": "Grey Hack GreyScript Syntax Highlighting",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },

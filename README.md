@@ -1,6 +1,6 @@
-# Atom syntax highlighting for Grey Hack Grey Script
+# Atom syntax highlighting for Grey Hack's GreyScript
 
-Colorful Grey Script code for the Atom editor. Visit the homepage [language-greyscript package](https://atom.io/packages/language-greyscript) here, or download from directly within Atom.
+Colorful GreyScript code for the Atom editor. Visit the homepage [language-greyscript package](https://atom.io/packages/language-greyscript) here, or download from directly within Atom.
 
 ![Image with example code](https://imgur.com/ceevQHJ.png)
 
