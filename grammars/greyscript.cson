@@ -12,15 +12,15 @@ patterns: [
     'name': 'support.class.gs'
   }
   { # Generic functions
-    'match':'\\b(\\.)?(typeof|get_router|nslookup|print|active_user|home_dir|get_shell|user_input|include_lib|exit|user_mail_address|user_bank_number|whois|command_info|program_path|format_columns|current_date|is_lan_ip)(?!\\s*:)\\b'
+    'match':'\\b(\\.)?(typeof|get_router|nslookup|print|active_user|home_dir|get_shell|user_input|include_lib|exit|user_mail_address|user_bank_number|whois|command_info|program_path|format_columns|current_date|is_lan_ip|wait|clear_screen)(?!\\s*:)\\b'
     'name': 'support.function.gs'
   }
   { # Computer functions
-    'match': '(\\b(\\.)?(get_ports|File|create_folder|current_path|is_network_active|lan_ip|touch|show_procs|network|devices|change_password|create_user|delete_user|create_group|delete_group|groups|close_program|wifi_networks|connect_wifi)\\b)'
+    'match': '(\\b(\\.)?(get_ports|File|create_folder|current_path|is_network_active|lan_ip|touch|show_procs|network|devices|change_password|create_user|delete_user|create_group|delete_group|groups|close_program|wifi_networks|connect_wifi|connect_ethernet|network_gateway|active_net_card)\\b)'
     'name': 'support.function.gs'
   }
   { # Router functions
-    'match': '(\\b(\\.)?(public_ip|local_ip|ping_port|port_info|used_ports|computer_ports|computers_lan_ip|essid_name|bssid_name)\\b)'
+    'match': '(\\b(\\.)?(public_ip|local_ip|ping_port|port_info|used_ports|device_ports|devices_lan_ip|essid_name|bssid_name)\\b)'
     'name': 'support.function.gs'
   }
   { # File functions
@@ -28,7 +28,7 @@ patterns: [
     'name': 'support.function.gs'
   }
   { # Misc functions
-    'match': '(\\b(\\.)?(get_lan_ip|is_closed|port_number|connect_service|start_terminal|scp_upload|put|build|launch|host_computer|decipher|aircrack|airmon|smtp_user_list|load|net_use|scan|scan_address|overflow|lib_name|version|dump_lib)\\b)'
+    'match': '(\\b(\\.)?(get_lan_ip|is_closed|port_number|connect_service|start_terminal|scp|put|build|launch|host_computer|decipher|aircrack|airmon|aireplay|smtp_user_list|load|net_use|scan|scan_address|overflow|lib_name|version|dump_lib|ping)\\b)'
     'name': 'support.function.gs'
   }
   { # Coments
