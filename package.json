@@ -1,7 +1,6 @@
 {
   "author": {
-    "name": "Elec0",
-    "email": "elec08215@gmail.com"
+    "name": "Nyx"
   },
   "description": "Grey Hack GreyScript Syntax Highlighting",
   "engines": {
@@ -22,7 +21,7 @@
   "name": "language-greyscript",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Elec0/language-greyscript.git"
+    "url": "https://github.com/nyx-gh/language-greyscript.git"
   },
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
