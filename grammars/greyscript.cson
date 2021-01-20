@@ -4,7 +4,7 @@ fileTypes: ['src', 'ms']
 
 patterns: [
   { # Control
-    'match': '(?<!\\.)\\b(function|break|catch|continue|do|else|finally|for|if|not|and|or|end|then|import|package|return|throw|try|while|with|in)\\b'
+    'match': '(?<!\\.)\\b(function|break|continue|else|for|if|not|and|or|end|then|return|while|in)\\b'
     'name': 'keyword.control.gs'
   }
   { # Classes
@@ -24,7 +24,7 @@ patterns: [
     'name': 'support.function.gs'
   }
   { # File functions
-    'match': '(\\b(\\.)?(copy|move|rename|path|parent|name|content|set_content|is_binary|has_permission|delete|get_folders|get_files|chmod|permissions|owner|group|set_group|size)\\b)'
+    'match': '(\\b(\\.)?(copy|move|rename|path|parent|name|content|set_content|is_binary|has_permission|delete|get_folders|get_files|chmod|permissions|owner|group|set_group|set_owner|size)\\b)'
     'name': 'support.function.gs'
   }
   { # Misc functions
